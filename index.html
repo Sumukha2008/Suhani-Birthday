@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Happy Birthday, Suhani! 🎀</title>
+<style>
+:root{--pink:#f9d3db;--pink2:#f3a9bb;--rose:#d4687f;--cream:#fff8ef;--paper:#fffaf3;--ink:#5a3b45;
+--hand:"Segoe Print","Bradley Hand","Chalkboard SE","Comic Sans MS",cursive;--serif:Georgia,"Times New Roman",serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:var(--ink);font-family:var(--serif);line-height:1.6;background-color:var(--cream);
+background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .55 0 0 0 0 .38 0 0 0 0 .38 0 0 0 .09 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),
+radial-gradient(circle at 15% 10%,#ffe3e9 0,transparent 40%),radial-gradient(circle at 85% 60%,#ffe9d9 0,transparent 40%);overflow-x:hidden}
+section{max-width:1100px;margin:0 auto;padding:64px 20px;position:relative;z-index:1}
+h1,h2{font-weight:normal;margin:0}
+h2{font-family:var(--hand);color:var(--rose);font-size:clamp(1.9rem,6vw,2.8rem);text-align:center;margin-bottom:8px}
+.sub{text-align:center;margin:0 0 36px;opacity:.8}
+.float{position:fixed;top:-40px;pointer-events:none;z-index:0;opacity:.55;animation:drift linear infinite}
+@keyframes drift{to{transform:translateY(112vh) rotate(360deg)}}
+/* HERO */
+.hero{text-align:center;min-height:92vh;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.hero .small{font-family:var(--hand);color:var(--rose);letter-spacing:.1em}
+h1{font-family:var(--hand);font-size:clamp(2.6rem,11vw,5.5rem);color:var(--rose);line-height:1.1;margin:10px 0 24px;text-shadow:3px 3px 0 var(--pink)}
+.btn{font:inherit;font-family:var(--hand);font-size:1.1rem;background:var(--rose);color:#fff;border:0;border-radius:999px;padding:14px 28px;cursor:pointer;box-shadow:0 6px 0 #b4506a,0 10px 18px rgba(212,104,127,.3);transition:transform .15s}
+.btn:active{transform:translateY(4px);box-shadow:0 2px 0 #b4506a}
+.btn.alt{background:#fff;color:var(--rose);box-shadow:0 5px 0 var(--pink2)}
+.note{max-width:520px;margin:30px auto 0;background:var(--paper);padding:26px 28px;border:2px dashed var(--pink2);border-radius:6px;box-shadow:0 8px 24px rgba(150,80,100,.15);transform:rotate(-1.2deg);animation:pop .6s ease}
+.note[hidden]{display:none}
+@keyframes pop{from{opacity:0;transform:scale(.8) rotate(-6deg)}}
+.note p{margin:0;font-size:1.15rem}
+/* SCRAPBOOK */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:44px 32px}
+.polaroid{margin:0;background:#fff;padding:12px 12px 6px;position:relative;transform:rotate(var(--r,0deg));box-shadow:0 8px 20px rgba(120,70,80,.22);transition:transform .25s}
+.polaroid:hover{transform:rotate(0) scale(1.03);z-index:2}
+.polaroid::before{content:"";position:absolute;top:-14px;left:50%;width:90px;height:26px;margin-left:-45px;transform:rotate(-4deg);background:rgba(249,211,219,.85);box-shadow:0 1px 3px rgba(0,0,0,.12)}
+.polaroid:nth-child(even)::before{background:rgba(255,236,190,.9);transform:rotate(5deg)}
+.polaroid img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:var(--pos,50% 40%);cursor:zoom-in;background:var(--pink)}
+.polaroid figcaption{font-family:var(--hand);text-align:center;padding:12px 6px 10px;font-size:1.02rem;min-height:3.2em}
+.hint{text-align:center;font-size:.9rem;opacity:.6;margin-top:30px}
+.lightbox{position:fixed;inset:0;background:rgba(60,30,40,.88);display:none;align-items:center;justify-content:center;flex-direction:column;z-index:50;padding:20px;cursor:zoom-out}
+.lightbox.on{display:flex}
+.lightbox img{max-width:100%;max-height:80vh;border:10px solid #fff;border-bottom-width:10px;box-shadow:0 10px 40px #000}
+.lightbox p{color:#fff;font-family:var(--hand);margin:14px 0 0;text-align:center}
+/* CAKE */
+.cake-wrap{text-align:center}
+.cake{width:min(340px,86vw);height:auto;overflow:visible}
+.candle{cursor:pointer;outline:none}
+.flame{transform-box:fill-box;transform-origin:50% 100%;animation:flick .5s ease-in-out infinite alternate;transition:opacity .3s,transform .3s}
+@keyframes flick{to{transform:scale(1.12,.92) rotate(3deg)}}
+.candle.out .flame{opacity:0;transform:scale(0);animation:none}
+.candle:focus-visible rect.stick{stroke:var(--rose);stroke-width:2}
+.smoke{opacity:0;fill:#c9b8bd}
+.candle.out .smoke{animation:smoke 2s ease-out}
+@keyframes smoke{0%{opacity:.8;transform:translateY(0)}100%{opacity:0;transform:translateY(-45px) scale(2)}}
+.status{font-family:var(--hand);font-size:1.25rem;min-height:2em;color:var(--rose);margin:10px 0 16px}
+.btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+/* LETTER */
+.letter{max-width:680px;margin:0 auto;background:var(--paper);padding:44px clamp(22px,6vw,56px);border-radius:4px;box-shadow:0 10px 30px rgba(120,70,80,.2);transform:rotate(.5deg);position:relative;
+background-image:repeating-linear-gradient(transparent 0 33px,#f6d9de 33px 34px);line-height:34px}
+.letter::after{content:"🌸";position:absolute;right:-8px;top:-18px;font-size:2.4rem;transform:rotate(15deg)}
+.letter p{margin:0 0 34px;font-family:var(--hand);font-size:1.05rem}
+.letter .sign{text-align:right;margin:0}
+footer{text-align:center;padding:40px 20px 60px;font-family:var(--hand);color:var(--rose)}
+.bit{position:fixed;pointer-events:none;z-index:60;animation:fly 1.6s ease-out forwards}
+@keyframes fly{to{transform:translate(var(--dx),var(--dy)) rotate(var(--rot));opacity:0}}
+@media (prefers-reduced-motion:reduce){.float,.flame{animation:none}.note{animation:none}}
+</style>
+</head>
+<body>
+
+<!-- ============ 1. WELCOME SECTION ============ -->
+<section class="hero">
+  <div class="small">✿ a little something for you ✿</div>
+  <!-- EDIT: the big title -->
+  <h1>Happy Birthday, Suhani! 🎂</h1>
+  <button class="btn" id="revealBtn" aria-expanded="false">Tap to open your message 💌</button>
+  <div class="note" id="sweetNote" hidden>
+    <!-- EDIT: the sweet message that appears when the button is tapped -->
+    <p>Today is all about you, Suhani. I hope your day is full of love, laughter and all your favourite things. I'm so happy you're my friend. 💗</p>
+  </div>
+</section>
+
+<!-- ============ 2. FRIENDSHIP SCRAPBOOK ============ -->
+<section id="scrapbook">
+  <!-- EDIT: section title and subtitle -->
+  <h2>A Friendship Scrapbook ✿</h2>
+  <p class="sub">A little collection of photos of you</p>
+
+  <div class="grid">
+    <!-- HOW TO EDIT A PHOTO: change the text inside <figcaption> to change its caption.
+         The photo file name is in src="photos/photo-01.jpg" - keep the "photos" folder next to this file.
+         To ADD a photo: copy a whole <figure>...</figure> block, paste it below, and change src and caption. -->
+
+    <figure class="polaroid" style="--r:-3deg;--pos:50% 30%">
+      <img src="photos/photo-01.jpg" alt="Photo 1 of Suhani">
+      <figcaption><!-- CAPTION 1 --> A cute mirror photo of you ♡</figcaption>
+    </figure>
+
+    <figure class="polaroid" style="--r:2.5deg;--pos:50% 35%">
+      <img src="photos/photo-02.jpg" alt="Photo 2 of Suhani">
+      <figcaption><!-- CAPTION 2 -->This is the cutest photo of all ♡</figcaption>
+    </figure>
+
+    <figure class="polaroid" style="--r:-1.5deg;--pos:50% 30%">
+      <img src="photos/photo-03.jpg" alt="Photo 3 of Suhani">
+      <figcaption><!-- CAPTION 3 --> Another side look  ♡</figcaption>
+    </figure>
+
+    <figure class="polaroid" style="--r:3deg;--pos:50% 40%">
+      <img src="photos/photo-04.jpg" alt="Photo 4 of Suhani">
+      <figcaption><!-- CAPTION 4 -->That hat makes you look like a baddie ♡</figcaption>
+    </figure>
+
+    <figure class="polaroid" style="--r:-2.5deg;--pos:50% 30%">
+      <img src="photos/photo-05.jpg" alt="Photo 5 of Suhani">
+      <figcaption><!-- CAPTION 5 -->This look and dress make me feel like 80s ♡</figcaption>
+    </figure>
+
+    <figure class="polaroid" style="--r:1.5deg;--pos:50% 40%">
+      <img src="photos/photo-06.jpg" alt="Photo 6 of Suhani">
+      <figcaption><!-- CAPTION 6 -->Nice earring ahh ♡</figcaption>
+    </figure>
+
+    <figure class="polaroid" style="--r:-3deg;--pos:50% 40%">
+      <img src="photos/photo-07.jpg" alt="Photo 7 of Suhani">
+      <figcaption><!-- CAPTION 7 -->You look banger in this ♡</figcaption>
+    </figure>
+
+    <figure class="polaroid" style="--r:2deg;--pos:50% 40%">
+      <img src="photos/photo-08.jpg" alt="Photo 8 of Suhani">
+      <figcaption><!-- CAPTION 8 -->Ahhh... the melting childhood photo ♡</figcaption>
+    </figure>
+
+    <figure class="polaroid" style="--r:-2deg;--pos:50% 30%">
+      <img src="photos/photo-09.jpg" alt="Photo 9 of Suhani">
+      <figcaption><!-- CAPTION 9 -->BADDIEEEEEEEE!!!! ♡</figcaption>
+    </figure>
+
+    <figure class="polaroid" style="--r:3deg;--pos:50% 72%">
+      <img src="photos/photo-10.jpg" alt="Photo 10 of Suhani">
+      <figcaption><!-- CAPTION 10 -->You are shining more than sun there</figcaption>
+    </figure>
+  </div>
+  <p class="hint">Tap any photo to see it bigger ✨</p>
+</section>
+
+<div class="lightbox" id="lightbox"><img alt=""><p></p></div>
+
+<!-- ============ 3. BIRTHDAY CAKE ============ -->
+<section class="cake-wrap" id="cake">
+  <h2>Make a Wish 🕯️</h2>
+  <p class="sub">Tap the candles to blow them out!</p>
+  <svg class="cake" viewBox="0 0 320 300" role="img" aria-label="Birthday cake with five candles">
+    <ellipse cx="160" cy="270" rx="140" ry="17" fill="#f3a9bb"/>
+    <ellipse cx="160" cy="266" rx="140" ry="15" fill="#fff"/>
+    <rect x="50" y="190" width="220" height="76" rx="12" fill="#f9d3db"/>
+    <rect x="90" y="130" width="140" height="64" rx="12" fill="#fff0d9"/>
+    <g fill="#fff"><circle cx="100" cy="144" r="9"/><circle cx="120" cy="144" r="9"/><circle cx="140" cy="144" r="9"/><circle cx="160" cy="144" r="9"/><circle cx="180" cy="144" r="9"/><circle cx="200" cy="144" r="9"/><circle cx="220" cy="144" r="9"/>
+      <circle cx="60" cy="204" r="9"/><circle cx="80" cy="204" r="9"/><circle cx="100" cy="204" r="9"/><circle cx="120" cy="204" r="9"/><circle cx="140" cy="204" r="9"/><circle cx="160" cy="204" r="9"/><circle cx="180" cy="204" r="9"/><circle cx="200" cy="204" r="9"/><circle cx="220" cy="204" r="9"/><circle cx="240" cy="204" r="9"/><circle cx="260" cy="204" r="9"/></g>
+    <rect x="50" y="190" width="220" height="12" fill="#fff" opacity="0"/>
+    <g font-size="16" text-anchor="middle"><text x="85" y="245">🌸</text><text x="160" y="248">💗</text><text x="235" y="245">🌸</text><text x="125" y="170">🌷</text><text x="195" y="170">🌷</text></g>
+    <!-- candles: tappable -->
+    <g class="candle" tabindex="0" role="button" aria-label="Candle 1"><rect x="95" y="80" width="30" height="55" fill="transparent"/><rect class="stick" x="106" y="100" width="8" height="32" rx="2" fill="#f3a9bb"/><path class="flame" d="M110 74C119 86 116 96 110 96C104 96 101 86 110 74Z" fill="#ffc94a"/><circle class="smoke" cx="110" cy="88" r="5"/></g>
+    <g class="candle" tabindex="0" role="button" aria-label="Candle 2"><rect x="120" y="80" width="30" height="55" fill="transparent"/><rect class="stick" x="131" y="100" width="8" height="32" rx="2" fill="#ffe3a8"/><path class="flame" d="M135 74C144 86 141 96 135 96C129 96 126 86 135 74Z" fill="#ffc94a"/><circle class="smoke" cx="135" cy="88" r="5"/></g>
+    <g class="candle" tabindex="0" role="button" aria-label="Candle 3"><rect x="145" y="80" width="30" height="55" fill="transparent"/><rect class="stick" x="156" y="100" width="8" height="32" rx="2" fill="#f3a9bb"/><path class="flame" d="M160 74C169 86 166 96 160 96C154 96 151 86 160 74Z" fill="#ffc94a"/><circle class="smoke" cx="160" cy="88" r="5"/></g>
+    <g class="candle" tabindex="0" role="button" aria-label="Candle 4"><rect x="170" y="80" width="30" height="55" fill="transparent"/><rect class="stick" x="181" y="100" width="8" height="32" rx="2" fill="#ffe3a8"/><path class="flame" d="M185 74C194 86 191 96 185 96C179 96 176 86 185 74Z" fill="#ffc94a"/><circle class="smoke" cx="185" cy="88" r="5"/></g>
+    <g class="candle" tabindex="0" role="button" aria-label="Candle 5"><rect x="195" y="80" width="30" height="55" fill="transparent"/><rect class="stick" x="206" y="100" width="8" height="32" rx="2" fill="#f3a9bb"/><path class="flame" d="M210 74C219 86 216 96 210 96C204 96 201 86 210 74Z" fill="#ffc94a"/><circle class="smoke" cx="210" cy="88" r="5"/></g>
+  </svg>
+  <!-- EDIT: the texts shown under the cake are in the <script> at the bottom (WISH_TEXT / START_TEXT) -->
+  <div class="status" id="cakeStatus" aria-live="polite"></div>
+  <div class="btns">
+    <button class="btn" id="blowAll">Blow them all out 💨</button>
+    <button class="btn alt" id="relight">Light them again 🕯️</button>
+  </div>
+</section>
+
+<!-- ============ 4. THE LETTER ============ -->
+<section id="letter">
+  <h2>A Letter For You 💌</h2>
+  <p class="sub">&nbsp;</p>
+  <article class="letter">
+    <!-- EDIT: every paragraph below is yours to rewrite. Add more with <p>...</p> -->
+    <p>Dear Suhani,</p>
+    <p>Happy birthday! I wanted to make something that comes straight from my heart, because a quick message didn't feel like enough for someone as special as you.</p>
+    <p>Having you as my close friend means so much to me. Thank you for being you, and for being part of my life. I'm really grateful for our friendship.</p>
+    <p>I hope this year is gentle, bright and full of everything you wish for. You deserve all the happiness in the world.</p>
+    <p>Happy birthday, Suhani. I'm so glad you're my friend. 💗</p>
+    <!-- EDIT: sign your name here -->
+    <p class="sign">With all my love,<br>Your friend - Sumukha ✿</p>
+  </article>
+</section>
+
+<footer>made with 💗 for Suhani</footer>
+
+<script>
+/* ===== Texts you can edit (cake section) ===== */
+const START_TEXT = "Tap a candle to blow it out";
+const WISH_TEXT  = "Make a wish, Suhani! ✨ Happy birthday! 🎉";
+/* ============================================== */
+
+const $ = s => document.querySelector(s);
+const still = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+// Falling hearts & flowers in the background
+if(!still){["💗","🌸","🌷","✿","💕","🌼"].forEach((e,i)=>{for(let k=0;k<3;k++){const s=document.createElement('span');s.className='float';s.textContent=e;
+s.style.left=Math.random()*100+'vw';s.style.fontSize=(14+Math.random()*16)+'px';s.style.animationDuration=(14+Math.random()*14)+'s';s.style.animationDelay=(-Math.random()*20)+'s';document.body.appendChild(s);}});}
+
+// Confetti of hearts & flowers from a point
+function burst(x,y,n=22){const set=["💗","🌸","✨","💕","🌷","🎉"];for(let i=0;i<n;i++){const b=document.createElement('span');b.className='bit';b.textContent=set[i%set.length];
+b.style.left=x+'px';b.style.top=y+'px';b.style.fontSize=(14+Math.random()*14)+'px';const a=Math.random()*Math.PI*2,d=70+Math.random()*130;
+b.style.setProperty('--dx',Math.cos(a)*d+'px');b.style.setProperty('--dy',(Math.sin(a)*d-40)+'px');b.style.setProperty('--rot',(Math.random()*360-180)+'deg');
+document.body.appendChild(b);setTimeout(()=>b.remove(),1700);}}
+const center=el=>{const r=el.getBoundingClientRect();return[r.left+r.width/2,r.top+r.height/2]};
+
+// Welcome message
+const btn=$('#revealBtn'),note=$('#sweetNote');
+btn.addEventListener('click',()=>{const open=note.hidden;note.hidden=!open;btn.setAttribute('aria-expanded',open);
+btn.textContent=open?'Hide message 💌':'Tap to open your message 💌';if(open)burst(...center(btn));});
+
+// Lightbox
+const lb=$('#lightbox');
+document.querySelectorAll('.polaroid img').forEach(img=>img.addEventListener('click',()=>{
+lb.querySelector('img').src=img.src;lb.querySelector('img').alt=img.alt;lb.querySelector('p').textContent=img.nextElementSibling.textContent;lb.classList.add('on');}));
+lb.addEventListener('click',()=>lb.classList.remove('on'));
+addEventListener('keydown',e=>{if(e.key==='Escape')lb.classList.remove('on')});
+
+// Cake
+const candles=[...document.querySelectorAll('.candle')],status=$('#cakeStatus');
+function update(fromTap){const left=candles.filter(c=>!c.classList.contains('out')).length;
+if(left===0){status.textContent=WISH_TEXT;if(fromTap){const[x,y]=center($('.cake'));burst(x,y,34);}}
+else status.textContent=left===candles.length?START_TEXT:left+(left===1?' candle left…':' candles left…');}
+function blow(c){if(!c.classList.contains('out')){c.classList.add('out');update(true);}}
+candles.forEach(c=>{c.addEventListener('click',()=>blow(c));c.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();blow(c)}});});
+$('#blowAll').addEventListener('click',()=>candles.forEach((c,i)=>setTimeout(()=>blow(c),i*180)));
+$('#relight').addEventListener('click',()=>{candles.forEach(c=>c.classList.remove('out'));update(false);});
+update(false);
+</script>
+</body>
+</html>
